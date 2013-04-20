@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+    <LinearLayout
+        android:layout_width="240dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#F8F8F8"
+        android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/ShowDataImg"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:src="@drawable/noimg" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000" >
+            <TextView
+                android:id="@+id/titleNameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="10dip"  
+                android:text="ชื่อ "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.41"
+            android:orientation="vertical"
+            android:background="#FFF" >
+            <TextView
+                android:id="@+id/ShowDataName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="20dip"  
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000" >
+            <TextView
+                android:id="@+id/titleNumberShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="10dip" 
+                android:text="เบอร์โทรศัพท์"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.41"
+            android:orientation="vertical"
+            android:background="#FFF" >
+
+            <TextView
+                android:id="@+id/ShowDataNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="20dip"        
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dip" >
+            <Button
+                android:id="@+id/btDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.17"
+                android:text="ลบ" />
+            <Button
+                android:id="@+id/btOkShowData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:text="ปิด" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

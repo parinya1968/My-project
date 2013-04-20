@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WebViewActivity!</string>
+    <string name="app_name">WebView</string>
+    <string name="webViewHead">WebView Demo</string>
+    <string name="btnOnline">Online WebView</string>
+    <string name="btnOffline">Offline WebView</string>
+
+</resources>

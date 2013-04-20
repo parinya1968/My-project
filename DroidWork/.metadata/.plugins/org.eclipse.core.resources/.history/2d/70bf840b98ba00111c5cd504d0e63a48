@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#C2CFDF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="How To Use App"
+        android:textColor="#000000"
+        android:textSize="20pt" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.02"
+        android:text="
+        1. This application will guide you how to build mass mucular.
+        2. First create a profile you will be assume to Basic Routine by default.
+        3. Follow a Routine.
+        4. In every two weeks you should update you profile to see a result of workout.
+        5. This is just Demo application I&apos;ll integrate more and more function(s) in the future."
+        android:textColor="@android:color/white"
+        android:textSize="12pt" />
+
+    <Button
+        android:id="@+id/howtoBackBtn"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Back" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DroidClientActivity!</string>
+    <string name="app_name">DroidClient</string>
+    <string name="serverMessage">Server Message</string>
+    <string name="Send">SEBD</string>
+    <string name="sent">SEND</string>
+
+</resources>

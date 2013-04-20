@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">App My Student</string>
+    <string name="Add">Add New Student</string>
+    <string name="ViewAll">View All Student</string>
+    <string name="head">App My Student</string>
+    <string name="name">Nama :</string>
+    <string name="surname">Surname :</string>
+    <string name="school">My School :</string>
+    <string name="save_data">Save New Student to SQLine</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="552dp"
+        android:background="#181818"
+        android:orientation="vertical"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/textMsg"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textSize="14dip"
+            android:layout_marginTop="10dip" />
+        <Button
+            android:id="@+id/btOkErr"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="OK" />
+    </LinearLayout>
+</ScrollView>

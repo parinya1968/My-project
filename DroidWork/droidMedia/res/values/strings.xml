@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DroidMediaActivity!</string>
+    <string name="app_name">DroidMedia</string>
+    <string name="welcomeMain">Welcome To Media Center</string>
+    <string name="audioMenu">Audio Player</string>
+    <string name="videoPlayer">Video Player</string>
+
+</resources>

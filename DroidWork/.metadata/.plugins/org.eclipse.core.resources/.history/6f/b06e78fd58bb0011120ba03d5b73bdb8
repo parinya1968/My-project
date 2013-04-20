@@ -1,0 +1,91 @@
+package rm.getbig.demo;
+
+import rm.getbig.demo.data.MyProfileData;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+
+public class AddNewprofile extends Activity{
+	private EditText edtName;
+	private EditText edtWeight;
+	private EditText edtHeight;
+
+	private String strName;
+	private int intWeight;
+	private int intHeight;
+
+	private MyProfileData feedData;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.addnewprofile);
+		initWidget();
+		feedData = new MyProfileData(this);
+	}
+
+	private void initWidget() {
+		edtName = (EditText) findViewById(R.id.edtName);
+		edtWeight = (EditText) findViewById(R.id.edtWeight);
+		edtHeight = (EditText) findViewById(R.id.edtHeight);
+	}
+
+	public void ClickSaveNewStudent(View view) {
+
+		strName = edtName.getText().toString();
+		intWeight = Integer.parseInt(edtWeight.getText().toString());
+		intHeight = Integer.parseInt(edtHeight.getText().toString());
+
+		showAddStudentDialog();
+		
+	}
+
+	private void showAddStudentDialog() {
+		// TODO Auto-generated method stub
+		AlertDialog.Builder addStudentAlert = new AlertDialog.Builder(this);
+		addStudentAlert.setIcon(R.drawable.ewtc_list);
+		addStudentAlert.setTitle("Add New Student to SQLite");
+		addStudentAlert.setMessage("Name : " + strName + "\n" + "Surname : "
+				+ strSurname + "\n" + "School : " + strSchool);
+
+		addStudentAlert.setPositiveButton("OK",
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						addDataToSQLite();
+					}
+				});
+
+		addStudentAlert.setNegativeButton("NO",
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						dialog.dismiss();
+					}
+				});
+
+		addStudentAlert.show();
+
+	}
+
+	protected void addDataToSQLite() {
+
+		long insertID = feedData.addNewStudent(strName, strSurname, strSchool);
+		Log.d("feedDATA", "feed id = " + insertID);
+		
+		edtName.setText("");
+		edtSurName.setText("");
+		edtSchool.setText("");
+
+	}
+
+}

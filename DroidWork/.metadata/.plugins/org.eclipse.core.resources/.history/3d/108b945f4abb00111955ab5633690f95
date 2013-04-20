@@ -1,0 +1,56 @@
+package rm.getbig.demo;
+
+import android.content.Context;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DbAdapter {
+	//Variable Define
+	private DatabaseHelper mDbHelper;
+	private SQLiteDatabase mDb;
+	private Context mCtx;
+	
+	//Variable of Database's name, table and version
+	private static final String DATABASE_NAME = "GetBigProfile";
+	private static final String TABLE_PROFILE = "Profile";
+	private static final int DATABASE_VERSION = 1;
+	
+	//Variable that hold field element of each table
+	public static final String KEY_ROWID = "id";
+	public static final String KEY_Name = "name";
+	public static final String KEY_ShSize ="shSize";
+	public static final String KEY_LeSize = "leSize";
+	public static final String KEY_ChSize = "chSize";
+	public static final String KEY_BiSize = "biSize";
+	
+	//Variable for call all of elements in table
+	private static final String[] ALL_PROFILE_KEY = new String [] { KEY_ROWID, KEY_Name, KEY_ShSize, KEY_LeSize, KEY_ChSize, KEY_BiSize};
+	
+	//SQL statement *********************************************
+	
+	//Custom SQLiteOpenHelper
+	private static class DatabaseHelper extends SQLiteOpenHelper{
+		
+		
+	}
+	
+	//Constructor and Require Function
+	public DbAdapter(Context ctx){
+		this.mCtx = ctx;
+		
+	}
+	
+	public DbAdapter open() throws SQLException{
+		mDbHelper = new DatabaseHelper(mCtx);
+		mDb = mDbHelper.getWritableDatabase();
+		return this;
+	}
+	
+	public void close(){
+		mDbHelper.close();
+	}
+	
+	//Query Funtion
+
+}

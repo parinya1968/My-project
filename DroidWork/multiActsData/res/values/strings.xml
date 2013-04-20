@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MultiActsDataActivity!</string>
+    <string name="app_name">MultiActsData</string>
+    <string name="play_game">Play Game</string>
+    <string name="end_game">End Game</string>
+
+</resources>

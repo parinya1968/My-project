@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SmsDroidActivity!</string>
+    <string name="app_name">SmsDroid</string>
+    <string name="Smsheader">Enter the phone number to send</string>
+    <string name="Massage">Massage here</string>
+    <string name="Sendsms">Send Sms</string>
+
+</resources>

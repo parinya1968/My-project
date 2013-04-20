@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MultipleActActivity!</string>
+    <string name="app_name">MultipleAct</string>
+    <string name="Screen1">Screen 1</string>
+    <string name="goScr1">Go to Screen 2</string>
+    <string name="Screen2">Screen 1</string>
+    <string name="Screen22">Screen 2</string>
+    <string name="goScr2">"Back To "</string>
+    <string name="gotoSrc22">Go To Screen 1</string>
+
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ewtc_list.png&apos; to &apos;drawable-hdpi&apos;&#x0D;&#x0A;- Original project: &apos;Test_MyStudent_SQLite&apos;&#x0D;&#x0A;- Destination element: &apos;drawable-hdpi&apos;&#x0D;&#x0A;- Original element: &apos;ewtc_list.png&apos;" description="Copy file" element1="res/drawable/ewtc_list.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1340250861988" target="/getBig/res/drawable-hdpi" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Week3Activity!</string>
+    <string name="app_name">Week3</string>
+    <string name="blue">#0000FF</string>
+    <string name="myname">Ratthapong Maetheekreingkrai</string>
+    <string name="menu">Menu</string>
+    <string name="about">About Me</string>
+
+</resources>

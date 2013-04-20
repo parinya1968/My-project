@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PassingDataActivity!</string>
+    <string name="app_name">PassingData</string>
+    <string name="play_game">play</string>
+
+</resources>

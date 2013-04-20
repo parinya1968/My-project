@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TelephoneActivity!</string>
+    <string name="app_name">NodeBook</string>
+    <string name="title">สมุดบันทึก</string>
+    <string name="btAdd">เพิ่มรายชื่อ</string>
+    <string name="btShow">แสดงรายชื่อ</string>
+    <string name="btimg">เลือกรูปภาพ</string>
+    <string name="srtError">ข้อความแจ้งเตือน</string>
+
+</resources>

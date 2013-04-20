@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PassDataActsActivity!</string>
+    <string name="app_name">PassDataActs</string>
+    <string name="level">Choose level</string>
+    <string name="btnLevel">Easy</string>
+    <string name="medLevel">Medium</string>
+    <string name="hardLevel">Hard</string>
+    <string name="result">Result</string>
+    <string name="sendMes">Send Message</string>
+    <string name="messageAct1">Message = ABC</string>
+    <string name="sndBackAct1">Reply to Message</string>
+    <string name="act2Message">Message of Activity 2 = DEFG</string>
+    <string name="act2Mess">Message</string>
+
+</resources>

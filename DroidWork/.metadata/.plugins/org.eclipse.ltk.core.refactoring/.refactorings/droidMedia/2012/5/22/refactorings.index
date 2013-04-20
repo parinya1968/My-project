@@ -1,0 +1,11 @@
+1338103101226	Rename type 'DroidMediaActivity'
+1338103124743	Copy compilation unit
+1338103132292	Copy compilation unit
+1338103156943	Rename resource 'main.xml'
+1338103173687	Rename resource 'mainMenu.xml'
+1338106145009	Copy compilation unit
+1338110449199	Extracts string 'null' into R.string.welcomeMain
+1338110488540	Change Layout
+1338110501055	Change Layout
+1338110536813	Extracts string 'null' into R.string.audioMenu
+1338110558064	Extracts string 'null' into R.string.videoPlayer

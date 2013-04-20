@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GetBigActivity!</string>
+    <string name="app_name">GetBig</string>
+    <string name="howTo"><p>Simply gain Muscle by create your profile and follow the routine.This is demo version I'll add more and more function in the future.</p></string>
+
+</resources>

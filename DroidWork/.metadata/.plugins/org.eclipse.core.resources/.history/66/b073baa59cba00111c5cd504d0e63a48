@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GetBigActivity!</string>
+    <string name="app_name">GetBig</string>
+    <string name="howTo">
+ <p>
+ You can display simple forms of Html in a text view.
+ You use the Html class and its fromHtml static method.
+ See
+ <a href="http://developer.android.com/reference/android/text/Html.html">Html
+  on Android Developers</a>.
+ </p>
+ <p>
+ As shown here, paragraphs are supported,
+ as are <b>bold text</b> and <i>italics</i>.
+ The preceding paragraph has a link in it.
+ </p>
+ <p><b>Return to the previous screen by touching the Back button.</b>
+ </p>
+ </string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GetBigActivity!</string>
+    <string name="app_name">GetBig</string>
+    <string name="howTo">
+        <p>This application help you to gain more muscle android:text="@string/help_page_intro"</p>
+    </string>
+
+</resources>

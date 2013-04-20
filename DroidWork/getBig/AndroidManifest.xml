@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rm.getbig.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:debuggable="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainScr"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileMenu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".HowTo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ViewR"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ViewProfiles"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AddNewprofile"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

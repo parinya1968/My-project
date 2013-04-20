@@ -1,0 +1,7 @@
+package rm.getbig.demo;
+
+import android.app.ListActivity;
+
+public class DeleteProfile extends ListActivity {
+
+}

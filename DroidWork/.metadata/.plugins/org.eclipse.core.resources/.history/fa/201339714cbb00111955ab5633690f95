@@ -1,0 +1,113 @@
+package rm.getbig.demo;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DbAdapter {
+	//Variable Define
+	private DatabaseHelper mDbHelper;
+	private SQLiteDatabase mDb;
+	private Context mCtx;
+	
+	//Variable of Database's name, table and version
+	private static final String DATABASE_NAME = "GetBigProfile";
+	private static final String TABLE_PROFILES = "Profiles";
+	private static final int DATABASE_VERSION = 1;
+	
+	//Variable that hold field element of each table
+	public static final String KEY_ROWID = "id";
+	public static final String KEY_Name = "name";
+	public static final String KEY_ShSize ="shSize";
+	public static final String KEY_LeSize = "leSize";
+	public static final String KEY_ChSize = "chSize";
+	public static final String KEY_BiSize = "biSize";
+	
+	//Variable for call all of elements in table
+	private static final String[] ALL_PROFILE_KEY = new String [] { KEY_ROWID, KEY_Name, KEY_ShSize, KEY_LeSize, KEY_ChSize, KEY_BiSize};
+	
+	//SQL statement for create table with five field elements
+	private static final String CREATE_PROFILES =
+			"CREATE TABLE Profiles("
+							+		"id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"
+							+		"name nvARCHAR(100) NOT NULL,"
+							+		"shSize INTEGER NOT NULL,"
+							+		"leSize INTEGER NOT NULL,"
+							+		"chSize INTEGER NOT NULL,"
+							+		"biSize INTEGER NOT NULL"
+							+		");";
+	
+	//Custom SQLiteOpenHelper
+	private static class DatabaseHelper extends SQLiteOpenHelper{
+		/*This is Constructor when call class if no database exits, create new one
+		  if there exits databases check for version and update or ignore*/
+		DatabaseHelper(Context context){
+			super(context, DATABASE_NAME, null, DATABASE_VERSION);
+		}
+		@Override
+		public void onCreate(SQLiteDatabase db){
+			//Call query statement to create table
+			db.execSQL(CREATE_PROFILES);
+		}
+		//When upgrade database version do this
+		@Override
+		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
+			//Drop existing and create new
+			db.execSQL("DROP TABLE IF EXISTS profiles");
+			onCreate(db);
+		}
+	}
+	
+	//Constructor and Require Function
+	public DbAdapter(Context ctx){
+		this.mCtx = ctx;
+		
+	}
+	
+	public DbAdapter open() throws SQLException{
+		mDbHelper = new DatabaseHelper(mCtx);
+		mDb = mDbHelper.getWritableDatabase();
+		return this;
+	}
+	
+	public void close(){
+		mDbHelper.close();
+	}
+	
+	//Query Funtion
+	//Class not create class name Profiles
+	public long addProfiles(Profiles profile){
+		ContentValues args = new ContentValues();
+		
+		args.put(KEY_ROWID, profile.id);
+		args.put(KEY_Name, profile.name);
+		args.put(KEY_ShSize, profile.shSize);
+		args.put(KEY_LeSize, profile.leSize);
+		args.put(KEY_ChSize, profile.chSize);
+		args.put(KEY_BiSize, profile.biSize);
+	}
+	
+	//Fetch elements from table
+	public Cursor fetchAllProfiles(){
+		return mDb.query(TABLE_PROFILES, ALL_PROFILE_KEY, KEY_ROWID + " = " + id, null, null, null, null);
+	}
+	
+	//Update profiles
+	public boolean updateStudent(int id, Profiles profile) 
+	     {
+	        ContentValues args = new ContentValues();
+
+	        args.put(KEY_ROWID, profile.id);
+			args.put(KEY_Name, profile.name);
+			args.put(KEY_ShSize, profile.shSize);
+			args.put(KEY_LeSize, profile.leSize);
+			args.put(KEY_ChSize, profile.chSize);
+			args.put(KEY_BiSize, profile.biSize);
+			
+	        return mDb.update(TABLE_PROFILES, args, KEY_ROWID + " = " + id, null) > 0;
+	     }
+
+}
